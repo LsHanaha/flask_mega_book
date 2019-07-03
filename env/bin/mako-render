@@ -1,4 +1,4 @@
-#!/Users/lshanaha/Desktop/mega_book/env/bin/python3
+#!/Users/lshanaha/Desktop/flask_mega_book/env/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'Mako==1.0.13','console_scripts','mako-render'
 __requires__ = 'Mako==1.0.13'
 import re
