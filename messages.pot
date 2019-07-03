@@ -1,0 +1,133 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-07-03 17:26+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: app/__init__.py:29
+msgid "Please log in to access this page."
+msgstr ""
+
+#: app/forms.py:8 app/forms.py:14 app/forms.py:31
+msgid "Username"
+msgstr ""
+
+#: app/forms.py:9 app/forms.py:16 app/forms.py:57
+msgid "Password"
+msgstr ""
+
+#: app/forms.py:10
+msgid "Remember Me"
+msgstr ""
+
+#: app/forms.py:11
+msgid "Sign In"
+msgstr ""
+
+#: app/forms.py:15 app/forms.py:52
+msgid "Email"
+msgstr ""
+
+#: app/forms.py:17 app/forms.py:58
+msgid "Repeat Password"
+msgstr ""
+
+#: app/forms.py:18
+msgid "Register"
+msgstr ""
+
+#: app/forms.py:32
+msgid "About me"
+msgstr ""
+
+#: app/forms.py:33 app/forms.py:48
+msgid "Submit"
+msgstr ""
+
+#: app/forms.py:47
+msgid "Say something"
+msgstr ""
+
+#: app/forms.py:53
+msgid "Send pass"
+msgstr ""
+
+#: app/forms.py:59
+msgid "Reset Password"
+msgstr ""
+
+#: app/routes.py:53
+msgid "Invalid username or password"
+msgstr ""
+
+#: app/routes.py:61
+msgid "next_page = {}"
+msgstr ""
+
+#: app/routes.py:76
+msgid "Congrats, you are user now!"
+msgstr ""
+
+#: app/routes.py:106
+msgid "Your changes saved!"
+msgstr ""
+
+#: app/routes.py:124 app/routes.py:139
+msgid "User {} not found."
+msgstr ""
+
+#: app/routes.py:127
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: app/routes.py:131
+msgid "You are following {}!"
+msgstr ""
+
+#: app/routes.py:142
+msgid "You cannot unfollow yourself!"
+msgstr ""
+
+#: app/routes.py:146
+msgid "You are not following {}."
+msgstr ""
+
+#: app/routes.py:169
+msgid "Check your email for instructions to reset password"
+msgstr ""
+
+#: app/routes.py:179
+msgid "Wrong change passwod link"
+msgstr ""
+
+#: app/routes.py:185
+msgid "Password reset"
+msgstr ""
+
+#: app/templates/404.html:4
+msgid "Page not found"
+msgstr ""
+
+#: app/templates/_post.html:15
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr ""
+
+#: app/templates/index.html:4
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr ""
+
