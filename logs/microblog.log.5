@@ -1,0 +1,123 @@
+2019-06-25 12:43:40,807 ERROR: Exception on /index [GET] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/how_r_u/Desktop/mega_book/app/routes.py", line 37, in index
+    return render_template('index.html', title="Home", form=form, posts=posts)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/how_r_u/Desktop/mega_book/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/how_r_u/Desktop/mega_book/app/templates/base.html", line 32, in top-level template code
+    {% block content %}
+  File "/home/how_r_u/Desktop/mega_book/app/templates/index.html", line 16, in block "content"
+    {% for post in posts %}
+TypeError: 'NoneType' object is not iterable
+2019-06-25 12:44:02,733 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:44:04,694 ERROR: Exception on /index [GET] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-06-25 12:44:05,855 ERROR: Exception on /index [GET] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-06-25 12:44:06,741 ERROR: Exception on /index [GET] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-06-25 12:44:34,896 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:44:37,664 ERROR: Exception on /index [GET] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-06-25 12:45:05,196 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:45:06,889 ERROR: Exception on /index [GET] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2019-06-25 12:45:34,495 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:46:15,682 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:46:46,008 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:50:50,205 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:57:05,385 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:57:28,579 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:58:45,011 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 12:59:43,453 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:01:53,980 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:02:54,581 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:03:07,382 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:03:20,711 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:03:35,243 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:04:19,981 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:05:14,555 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:05:36,530 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:05:52,367 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:06:09,700 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:07:51,355 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:09:41,263 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:10:29,277 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 13:10:57,314 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 14:02:49,285 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 14:03:15,860 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 14:03:39,553 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 14:04:19,398 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 14:19:06,305 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-25 14:19:57,923 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]

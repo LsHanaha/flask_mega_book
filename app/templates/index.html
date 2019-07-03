@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi, {{ current_user.username }}!</h1>
+    {%if form %}
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{form.post.label}} <br>
+            {{form.post(cols=32, rows =4)}}<br>
+            {% for error in form.post.errors %}
+                <span style="color: red;">[{{error}}]</span>
+            {% endfor %}
+        </p>
+        {{ form.submit()}}
+    </form>
+    {%endif%}
+
+    {% for post in posts %}
+        {% include "_post.html" %}
+    {% endfor %}
+    
+    
+    {% if prev_url %}
+        <a href={{prev_url}}>Prev</a>
+    {% endif %}
+    {% if next_url %}
+        <a href={{next_url}}>next</a>
+    {% endif %}
+
+
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        </ul>
+    </nav>
+{% endblock %}

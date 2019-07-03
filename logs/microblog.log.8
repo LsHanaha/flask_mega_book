@@ -1,0 +1,113 @@
+2019-06-14 15:00:36,616 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-14 15:51:56,828 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-14 15:52:02,650 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-14 16:40:05,155 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-14 16:40:17,250 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 16:42:27,010 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 16:42:38,516 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:45:06,129 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:46:20,953 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:47:46,856 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:48:13,065 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:51:03,002 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:51:16,425 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:52:32,267 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:52:50,041 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-17 17:55:19,627 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-24 18:15:54,929 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-24 18:16:01,420 ERROR: Exception on / [GET] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/how_r_u/Desktop/mega_book/app/routes.py", line 37, in index
+    return render_template('index.html', title="Home", form=form, posts=posts)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/how_r_u/Desktop/mega_book/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/how_r_u/Desktop/mega_book/app/templates/base.html", line 32, in top-level template code
+    {% block content %}
+  File "/home/how_r_u/Desktop/mega_book/app/templates/index.html", line 13, in block "content"
+    {{ from.submit()}}
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'from' is undefined
+2019-06-24 18:16:02,919 ERROR: Exception on /login [POST] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/how_r_u/Desktop/mega_book/app/routes.py", line 49, in login
+    return redirect(udrl_for("index"))
+NameError: name 'udrl_for' is not defined
+2019-06-24 18:16:34,365 INFO: Microblog startup [in /home/how_r_u/Desktop/mega_book/app/__init__.py:53]
+2019-06-24 18:16:39,104 ERROR: Exception on /index [GET] [in /home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/how_r_u/Desktop/mega_book/app/routes.py", line 37, in index
+    return render_template('index.html', title="Home", form=form, posts=posts)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/how_r_u/Desktop/mega_book/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/how_r_u/Desktop/mega_book/app/templates/base.html", line 32, in top-level template code
+    {% block content %}
+  File "/home/how_r_u/Desktop/mega_book/app/templates/index.html", line 13, in block "content"
+    {{ from.submit()}}
+  File "/home/how_r_u/.local/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'from' is undefined
